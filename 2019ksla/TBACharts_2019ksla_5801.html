@@ -1,0 +1,135 @@
+
+<html>
+  <head>
+  <title>TBA Team Data</title>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/frc.js"></script>
+    <script>
+   
+    loadGoogleCharts();
+      
+      function drawTable() {
+        var jsteam_data = new google.visualization.DataTable();
+jsteam_data.addColumn("string", "Match Key", "Match Key");
+jsteam_data.addColumn("number", "Sandstorm", "Sandstorm");
+jsteam_data.addColumn("number", "Hatch Panel", "Hatch Panel");
+jsteam_data.addColumn("number", "Cargo", "Cargo");
+jsteam_data.addColumn("number", "Habitat", "Habitat");
+jsteam_data.addColumn("number", "Foul Points", "Foul Points");
+jsteam_data.addRows(16);
+jsteam_data.setCell(0, 0, "qm3 - W");
+jsteam_data.setCell(0, 1, 15);
+jsteam_data.setCell(0, 2, 10);
+jsteam_data.setCell(0, 3, 15);
+jsteam_data.setCell(0, 4, 9);
+jsteam_data.setCell(0, 5, 0);
+jsteam_data.setCell(1, 0, "qm12 - W");
+jsteam_data.setCell(1, 1, 9);
+jsteam_data.setCell(1, 2, 8);
+jsteam_data.setCell(1, 3, 24);
+jsteam_data.setCell(1, 4, 15);
+jsteam_data.setCell(1, 5, 0);
+jsteam_data.setCell(2, 0, "qm15 - W");
+jsteam_data.setCell(2, 1, 15);
+jsteam_data.setCell(2, 2, 10);
+jsteam_data.setCell(2, 3, 15);
+jsteam_data.setCell(2, 4, 15);
+jsteam_data.setCell(2, 5, 0);
+jsteam_data.setCell(3, 0, "qm21 - L");
+jsteam_data.setCell(3, 1, 15);
+jsteam_data.setCell(3, 2, 6);
+jsteam_data.setCell(3, 3, 24);
+jsteam_data.setCell(3, 4, 18);
+jsteam_data.setCell(3, 5, 0);
+jsteam_data.setCell(4, 0, "qm29 - W");
+jsteam_data.setCell(4, 1, 15);
+jsteam_data.setCell(4, 2, 8);
+jsteam_data.setCell(4, 3, 18);
+jsteam_data.setCell(4, 4, 6);
+jsteam_data.setCell(4, 5, 0);
+jsteam_data.setCell(5, 0, "qm33 - W");
+jsteam_data.setCell(5, 1, 15);
+jsteam_data.setCell(5, 2, 8);
+jsteam_data.setCell(5, 3, 18);
+jsteam_data.setCell(5, 4, 12);
+jsteam_data.setCell(5, 5, 0);
+jsteam_data.setCell(6, 0, "qm40 - W");
+jsteam_data.setCell(6, 1, 15);
+jsteam_data.setCell(6, 2, 10);
+jsteam_data.setCell(6, 3, 15);
+jsteam_data.setCell(6, 4, 18);
+jsteam_data.setCell(6, 5, 0);
+jsteam_data.setCell(7, 0, "qm45 - W");
+jsteam_data.setCell(7, 1, 15);
+jsteam_data.setCell(7, 2, 8);
+jsteam_data.setCell(7, 3, 15);
+jsteam_data.setCell(7, 4, 21);
+jsteam_data.setCell(7, 5, -3);
+jsteam_data.setCell(8, 0, "qm51 - W");
+jsteam_data.setCell(8, 1, 15);
+jsteam_data.setCell(8, 2, 8);
+jsteam_data.setCell(8, 3, 30);
+jsteam_data.setCell(8, 4, 6);
+jsteam_data.setCell(8, 5, 0);
+jsteam_data.setCell(9, 0, "qm55 - W");
+jsteam_data.setCell(9, 1, 15);
+jsteam_data.setCell(9, 2, 6);
+jsteam_data.setCell(9, 3, 18);
+jsteam_data.setCell(9, 4, 18);
+jsteam_data.setCell(9, 5, -9);
+jsteam_data.setCell(10, 0, "qm63 - W");
+jsteam_data.setCell(10, 1, 15);
+jsteam_data.setCell(10, 2, 8);
+jsteam_data.setCell(10, 3, 24);
+jsteam_data.setCell(10, 4, 18);
+jsteam_data.setCell(10, 5, 0);
+jsteam_data.setCell(11, 0, "qm72 - W");
+jsteam_data.setCell(11, 1, 12);
+jsteam_data.setCell(11, 2, 12);
+jsteam_data.setCell(11, 3, 27);
+jsteam_data.setCell(11, 4, 21);
+jsteam_data.setCell(11, 5, 0);
+jsteam_data.setCell(12, 0, "qf1 - W");
+jsteam_data.setCell(12, 1, 9);
+jsteam_data.setCell(12, 2, 8);
+jsteam_data.setCell(12, 3, 21);
+jsteam_data.setCell(12, 4, 21);
+jsteam_data.setCell(12, 5, 0);
+jsteam_data.setCell(13, 0, "qf2 - W");
+jsteam_data.setCell(13, 1, 15);
+jsteam_data.setCell(13, 2, 10);
+jsteam_data.setCell(13, 3, 30);
+jsteam_data.setCell(13, 4, 30);
+jsteam_data.setCell(13, 5, -3);
+jsteam_data.setCell(14, 0, "sf1 - L");
+jsteam_data.setCell(14, 1, 15);
+jsteam_data.setCell(14, 2, 8);
+jsteam_data.setCell(14, 3, 21);
+jsteam_data.setCell(14, 4, 21);
+jsteam_data.setCell(14, 5, -3);
+jsteam_data.setCell(15, 0, "sf2 - L");
+jsteam_data.setCell(15, 1, 15);
+jsteam_data.setCell(15, 2, 8);
+jsteam_data.setCell(15, 3, 18);
+jsteam_data.setCell(15, 4, 15);
+jsteam_data.setCell(15, 5, -6);
+
+        
+        var options = {
+        width: 1200,
+        height: 600,
+        isStacked: true
+        };
+        
+        var jsteam_table = new google.visualization.SteppedAreaChart(document.getElementById('chart_div'));
+        jsteam_table.draw(jsteam_data, options);
+           
+      }
+    </script>
+  </head>
+  <body>
+    <H1>5801 - b'CTC Inspire' Data</H1>
+    <div id="chart_div"></div>
+  </body>
+</html>
