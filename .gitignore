@@ -1,0 +1,4 @@
+dist/main/**
+dist/**
+2018week0/**
+.vscode/settings.json

@@ -1,0 +1,33 @@
+import tbapy
+import csv
+import json
+import math
+
+tba = tbapy.TBA('fWFSAeNa3VxZUdVJhaXgAXjnM9mfLBmbw1bbOrviglJBtJxmcUTANIMpECdWSSwU')
+
+year = "2018"
+red = "red"
+blue = "blue"
+event = "2018week0"  # 2018week0, 2018mokc2, 2018iacf
+teamObjects = tba.event_teams(event, simple="true")
+
+# f = open("TBA_Match_Data.cs","w+")
+
+# teamData = csv.writer(f, quoting=csv.QUOTE_ALL)
+
+# teamData.writerow(["Team Number", "Team Name", "Number of Matches", "Ranking Points", "Win %", "Auto Mobility",
+#                 "Auto Switch", "Auto Scale", "Tele Switch", "Tele Scale", "No. Cubes in Vault", "Climb/Park Score"])
+
+for team in teamObjects:
+    # Start variable list to reset for each team #
+    matchCount = 0
+    winCount = 0
+    rankingPoints = 0
+    autoMobility = 0
+    autoSwitch = 0
+    autoScale = 0
+    teleSwitch = 0
+    teleScale = 0
+    vault = 0
+    climb = 0
+    print(team)
