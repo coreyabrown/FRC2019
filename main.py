@@ -187,7 +187,7 @@ for team in vari.teamObjects:
 
         # Add Other scores
         autoMobility = autoMobility + matchMobility
-        hatchPoints = hatchPoints + hatchPoints
+        hatchPoints = hatchPoints + matchHatch
         cargoPoints = cargoPoints + matchCargo
         foulPoints = foulPoints + matchFoul
         totalPoints = totalPoints + matchPoints
