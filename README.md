@@ -1,7 +1,7 @@
 # FRC2019
 This pulls data down from thebluealliance and outputs several html files.
 To run, use main.exe in ../dist/main
-It will ask for an event id, input the id of the event you want to analyze, i.e. 2018week0 or 2018ndgf
+It will ask for an event id, input the id of the event you want to analyze
 
 Examples of html output are in the 2019ksla folder.
 
